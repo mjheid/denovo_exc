@@ -1,2 +1,5 @@
 Data/S*
 *.zip
+*.bed
+*.gfa
+*.bin
