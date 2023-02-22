@@ -11,10 +11,9 @@
     ```sh
     hifiasm -o hifisam_result/SRR13577846.asm -t 10 Data/SRR13577846.fastq.gz
     ```
-    * Convert resulting .gfa files to fasta: ```sh
-    awk '/^S/{print ">"$2;print $3}' SRR13577846.asm.bp.hap1.p_ctg.gfa > SRR13577846.asm.bp.hap1.p_ctg.fa
-    awk '/^S/{print ">"$2;print $3}' SRR13577846.asm.bp.hap2.p_ctg.gfa > SRR13577846.asm.bp.hap2.p_ctg.fa
-    ```  
+    * Convert resulting .gfa files to fasta: 
+    ```awk '/^S/{print ">"$2;print $3}' SRR13577846.asm.bp.hap1.p_ctg.gfa > SRR13577846.asm.bp.hap1.p_ctg.fa
+    awk '/^S/{print ">"$2;print $3}' SRR13577846.asm.bp.hap2.p_ctg.gfa > SRR13577846.asm.bp.hap2.p_ctg.fa```  
 4. QC with Quast V5.2.0  
     * Search for Reference Genome on SGD `http://sgd-archive.yeastgenome.org/sequence/S288C_reference/` by downloading latest genome releases, selecting the latest (RefSeq assembly GCF_000146045.2), and Downloading it.  
     ```sh
