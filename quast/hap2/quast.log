@@ -1,0 +1,115 @@
+/home/inf-42-2022/miniconda3/envs/binp29/bin/quast hifisam_result/SRR13577846.asm.bp.hap2.p_ctg.fa -o quast/hap2/ -r Data/GCF_000146045.2_R64_genomic.fna.gz
+
+Version: 5.2.0
+
+System information:
+  OS: Linux-6.1.11-100.fc36.x86_64-x86_64-with-glibc2.35 (linux_64)
+  Python version: 3.10.9
+  CPUs number: 16
+
+Started: 2023-02-22 14:37:23
+
+Logging to /home/inf-42-2022/binp29/denovo_exc/quast/hap2/quast.log
+NOTICE: Output directory already exists and looks like a QUAST output dir. Existing results can be reused (e.g. previously generated alignments)!
+NOTICE: Maximum number of threads is set to 4 (use --threads option to set it manually)
+
+CWD: /home/inf-42-2022/binp29/denovo_exc
+Main parameters: 
+  MODE: default, threads: 4, min contig length: 500, min alignment length: 65, min alignment IDY: 95.0, \
+  ambiguity: one, min local misassembly length: 200, min extensive misassembly length: 1000
+
+Reference:
+  /home/inf-42-2022/binp29/denovo_exc/Data/GCF_000146045.2_R64_genomic.fna.gz ==> GCF_000146045.2_R64_genomic
+
+Contigs:
+  Pre-processing...
+  hifisam_result/SRR13577846.asm.bp.hap2.p_ctg.fa ==> SRR13577846.asm.bp.hap2.p_ctg
+
+2023-02-22 14:37:24
+Running Basic statistics processor...
+  Reference genome:
+    GCF_000146045.2_R64_genomic.fna, length = 12157105, num fragments = 17, GC % = 38.15
+  Contig files: 
+    SRR13577846.asm.bp.hap2.p_ctg
+  Calculating N50 and L50...
+    SRR13577846.asm.bp.hap2.p_ctg, N50 = 809047, L50 = 6, auN = 834149.4, Total length = 11724748, GC % = 38.30, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /home/inf-42-2022/binp29/denovo_exc/quast/hap2/basic_stats/Nx_plot.pdf
+  Drawing NGx plot...
+    saved to /home/inf-42-2022/binp29/denovo_exc/quast/hap2/basic_stats/NGx_plot.pdf
+  Drawing cumulative plot...
+    saved to /home/inf-42-2022/binp29/denovo_exc/quast/hap2/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /home/inf-42-2022/binp29/denovo_exc/quast/hap2/basic_stats/GC_content_plot.pdf
+  Drawing SRR13577846.asm.bp.hap2.p_ctg GC content plot...
+    saved to /home/inf-42-2022/binp29/denovo_exc/quast/hap2/basic_stats/SRR13577846.asm.bp.hap2.p_ctg_GC_content_plot.pdf
+Done.
+
+2023-02-22 14:37:25
+Running Contig analyzer...
+  SRR13577846.asm.bp.hap2.p_ctg
+  Logging to files /home/inf-42-2022/binp29/denovo_exc/quast/hap2/contigs_reports/contigs_report_SRR13577846-asm-bp-hap2-p_ctg.stdout and contigs_report_SRR13577846-asm-bp-hap2-p_ctg.stderr...
+  Aligning contigs to the reference
+  /home/inf-42-2022/miniconda3/envs/binp29/bin/minimap2 -c -x asm10 -B5 -O4,16 --no-long-join \
+  -r 200 -N 50 -s 65 -z 200 --mask-level 0.9 --min-occ 200 -g 2500 --score-N 2 --cs \
+  -t 4 quast/hap2/quast_corrected_input/GCF_000146045.2_R64_genomic.fna quast/hap2/quast_corrected_input/SRR13577846-asm-bp-hap2-p_ctg.fa \
+  > quast/hap2/contigs_reports/minimap_output/SRR13577846-asm-bp-hap2-p_ctg.coords_tmp \
+  2>> quast/hap2/contigs_reports/contigs_report_SRR13577846-asm-bp-hap2-p_ctg.stderr
+  Analysis is finished.
+
+  Creating total report...
+    saved to /home/inf-42-2022/binp29/denovo_exc/quast/hap2/contigs_reports/misassemblies_report.txt, misassemblies_report.tsv, and misassemblies_report.tex
+  Transposed version of total report...
+    saved to /home/inf-42-2022/binp29/denovo_exc/quast/hap2/contigs_reports/transposed_report_misassemblies.txt, transposed_report_misassemblies.tsv, and transposed_report_misassemblies.tex
+  Creating total report...
+    saved to /home/inf-42-2022/binp29/denovo_exc/quast/hap2/contigs_reports/unaligned_report.txt, unaligned_report.tsv, and unaligned_report.tex
+  Drawing misassemblies by types plot...
+    saved to /home/inf-42-2022/binp29/denovo_exc/quast/hap2/contigs_reports/misassemblies_plot.pdf
+  Drawing misassemblies FRCurve plot...
+    saved to /home/inf-42-2022/binp29/denovo_exc/quast/hap2/contigs_reports/misassemblies_frcurve_plot.pdf
+Done.
+
+2023-02-22 14:37:29
+Running NA-NGA calculation...
+  SRR13577846.asm.bp.hap2.p_ctg, Largest alignment = 843303, NA50 = 273893, NGA50 = 247983, LA50 = 12, LGA50 = 13
+  Drawing cumulative plot...
+    saved to /home/inf-42-2022/binp29/denovo_exc/quast/hap2/aligned_stats/cumulative_plot.pdf
+  Drawing NAx plot...
+    saved to /home/inf-42-2022/binp29/denovo_exc/quast/hap2/aligned_stats/NAx_plot.pdf
+  Drawing NGAx plot...
+    saved to /home/inf-42-2022/binp29/denovo_exc/quast/hap2/aligned_stats/NGAx_plot.pdf
+Done.
+
+2023-02-22 14:37:29
+Running Genome analyzer...
+  NOTICE: No file with genomic features were provided. Use the --features option if you want to specify it.
+
+  NOTICE: No file with operons were provided. Use the -O option if you want to specify it.
+  SRR13577846.asm.bp.hap2.p_ctg
+  Analysis is finished.
+  Skipping drawing Genome fraction, % histogram... (less than 2 columns histogram makes no sense)
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2023-02-22 14:37:31
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating PDF with all tables and plots...
+  2 of 2: Creating Icarus viewers...
+Done
+
+2023-02-22 14:37:32
+RESULTS:
+  Text versions of total report are saved to /home/inf-42-2022/binp29/denovo_exc/quast/hap2/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /home/inf-42-2022/binp29/denovo_exc/quast/hap2/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /home/inf-42-2022/binp29/denovo_exc/quast/hap2/report.html
+  PDF version (tables and plots) is saved to /home/inf-42-2022/binp29/denovo_exc/quast/hap2/report.pdf
+  Icarus (contig browser) is saved to /home/inf-42-2022/binp29/denovo_exc/quast/hap2/icarus.html
+  Log is saved to /home/inf-42-2022/binp29/denovo_exc/quast/hap2/quast.log
+
+Finished: 2023-02-22 14:37:32
+Elapsed time: 0:00:09.263191
+NOTICEs: 5; WARNINGs: 0; non-fatal ERRORs: 0
+
+Thank you for using QUAST!

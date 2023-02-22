@@ -3,3 +3,14 @@ Data/S*
 *.bed
 *.gfa
 *.bin
+*.gz
+*.fa
+quast/*/aligned_stats/*
+quast/*/basic_stats/*
+quast/*/contigs_reports/*
+quast/*/genome_stats/*
+quast/*/icarus*
+*.html
+*.txt
+*.tsv
+*.tex
