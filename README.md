@@ -1,4 +1,4 @@
-# Long read de novo assembly exercise  
+# Long read de novo assembly exercise, M Heidrich  
 
 1. Download Data  
     * SRR13577846
