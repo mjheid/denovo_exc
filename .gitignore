@@ -14,3 +14,7 @@ quast/*/icarus*
 *.txt
 *.tsv
 *.tex
+busco_downloads
+*.log
+busco_result/*/run_saccharomycetes_odb10/
+busco_result/*/logs/
